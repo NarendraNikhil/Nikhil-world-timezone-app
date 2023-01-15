@@ -30,6 +30,15 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+					<cloudHubDeployment>
+					<username>Nikhil1213</username>
+					<password>Nikhil@123</password>
+					<environment>Sandbox</environment>
+					<workers>1</workers>
+					<workerType>Micro</workerType>
+					<applicationName>WorldTimeApi-Nikh</applicationName>
+					<muleVersion>4.4.0</muleVersion>		
+					</cloudHubDeployment>
 			</plugin>
 			<plugin>
 				<groupId>com.mulesoft.munit.tools</groupId>
