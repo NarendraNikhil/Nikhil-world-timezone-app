@@ -26,19 +26,22 @@
 				<version>3.2.0</version>
 			</plugin>
 			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
-					<cloudHubDeployment>
-					<username>Nikhil1213</username>
-					<password>Nikhil@123</password>
-					<environment>Sandbox</environment>
-					<workers>1</workers>
-					<workerType>Micro</workerType>
-					<applicationName>WorldTimeApi-Nikh</applicationName>
-					<muleVersion>4.4.0</muleVersion>		
-					</cloudHubDeployment>
+			  <groupId>org.mule.tools.maven</groupId>
+			  <artifactId>mule-maven-plugin</artifactId>
+			  <version>3.7.1</version>
+			  <extensions>true</extensions>
+			  <configuration>
+			    <cloudHubDeployment>
+			      <uri>https://anypoint.mulesoft.com</uri>
+			      <muleVersion>4.4.0</muleVersion>
+			      <username>Nikhil1213</username>
+			      <password>Nikhil@123</password>
+			      <applicationName>worldTimeZone-Nikhil</applicationName>
+			      <environment>sandbox</environment>
+			      <workers>1</workers>
+			      <workerType>Micro</workerType>
+			    </cloudHubDeployment>
+			  </configuration>
 			</plugin>
 			<plugin>
 				<groupId>com.mulesoft.munit.tools</groupId>
