@@ -13,6 +13,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:request-config>
 	<flow name="worldtimeapiFlow" doc:id="162d03ea-c01a-4cd4-86fc-2ce3ca3f1f8e" >
 		<http:listener doc:name="Listener" doc:id="8d0b0980-e19f-4210-8e0f-96b036832792" config-ref="HTTP_Listener_config" path="/{region}/{city}"/>
+		<logger level="INFO" doc:name="Logger" doc:id="0a39dc0b-572a-47d2-bf3a-17ab1ab51ece" message="Request for TimeZone Initiated: #[uuid()]"/>
 		<http:request method="GET" doc:name="Request for timeZone" doc:id="a51bbfdb-6285-419c-a8f3-d8b70a35c6d4" config-ref="HTTP_Request_configuration" path="/{region}/{city}">
 			<http:uri-params ><![CDATA[#[output application/java
 ---
